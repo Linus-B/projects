@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="av4-MM-h6N">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Normal Explanation-->
+        <scene sceneID="VPA-se-Iwh">
+            <objects>
+                <viewController id="iq2-Cw-fg5" userLabel="Normal Explanation" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FNs-JZ-AaT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Secret Tunnel Background" translatesAutoresizingMaskIntoConstraints="NO" id="JHB-80-HvT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tR-ma-dNS">
+                                <rect key="frame" x="24" y="24" width="80" height="40"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="24"/>
+                                <state key="normal" title="Back" backgroundImage="Button Background">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="av4-MM-h6N" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="vDL-Ap-GqY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="350" translatesAutoresizingMaskIntoConstraints="NO" id="Tm7-p4-gPv" userLabel="Explanation">
+                                <rect key="frame" x="32" y="72" width="350" height="676"/>
+                                <string key="text">There is a 6-digit secret code containing the numbers 1-6, each appearing exactly once. You get 8 guesses to crack the code. Each guess you make is given a score. If you have a number in the correct position, that adds 4 to your score. If you have a number 1-position off from the correct position, you get 2 points, and if the number is 2-positions off, you get 1 point! Any further away and you don’t get any points. After your 3rd and 5th guesses, you also get to reveal what number is in a position of the secret code. </string>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="26"/>
+                                <color key="textColor" red="0.22352941176470587" green="1" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VgE-CZ-dkn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="JHB-80-HvT" secondAttribute="trailing" constant="-20" id="JR5-E0-K0a"/>
+                            <constraint firstItem="JHB-80-HvT" firstAttribute="leading" secondItem="FNs-JZ-AaT" secondAttribute="leadingMargin" constant="-20" id="eiX-zz-klB"/>
+                            <constraint firstItem="2tR-ma-dNS" firstAttribute="top" secondItem="VgE-CZ-dkn" secondAttribute="top" constant="24" id="fCY-TZ-tS5"/>
+                            <constraint firstItem="Tm7-p4-gPv" firstAttribute="centerX" secondItem="FNs-JZ-AaT" secondAttribute="centerX" id="fY8-YP-9Bt"/>
+                            <constraint firstItem="JHB-80-HvT" firstAttribute="top" secondItem="FNs-JZ-AaT" secondAttribute="topMargin" id="gb3-vK-nHi"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="JHB-80-HvT" secondAttribute="bottom" constant="-34" id="ioM-hh-DG8"/>
+                            <constraint firstItem="2tR-ma-dNS" firstAttribute="leading" secondItem="VgE-CZ-dkn" secondAttribute="leading" constant="24" id="sQ1-9q-9cS"/>
+                            <constraint firstItem="Tm7-p4-gPv" firstAttribute="top" secondItem="2tR-ma-dNS" secondAttribute="bottom" constant="8" id="wMN-9w-lsj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QWc-Zu-4ko"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vcs-zK-aIU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1033.3333333333335" y="-955.58035714285711"/>
+        </scene>
+        <!--Hard Explanation-->
+        <scene sceneID="ckt-B8-klg">
+            <objects>
+                <viewController id="hu1-pl-ByM" userLabel="Hard Explanation" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6hs-6P-ETF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Secret Tunnel Background" translatesAutoresizingMaskIntoConstraints="NO" id="WgS-V8-4wx">
+                                <rect key="frame" x="-20" y="0.0" width="454" height="876"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="350" translatesAutoresizingMaskIntoConstraints="NO" id="XOQ-NP-UjA" userLabel="Explanation">
+                                <rect key="frame" x="32" y="96" width="350" height="260"/>
+                                <string key="text">In Hard mode, you only get 7 guesses to find the 6-digit secret code, but you still get a number revealed after your 3rd and 5th geusses. In addition, each number 1-6 can appear up to 2 times in the code. </string>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="26"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ov9-OY-DEh">
+                                <rect key="frame" x="24" y="24" width="80" height="40"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="6" minY="0.0" maxX="6" maxY="0.0"/>
+                                <state key="normal" title="Back" backgroundImage="Button Background">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="av4-MM-h6N" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="QhI-dt-PJO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g1p-fa-iMX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ov9-OY-DEh" firstAttribute="leading" secondItem="g1p-fa-iMX" secondAttribute="leading" constant="24" id="0mJ-fc-igF"/>
+                            <constraint firstItem="XOQ-NP-UjA" firstAttribute="centerX" secondItem="6hs-6P-ETF" secondAttribute="centerX" id="8w9-U4-eQo"/>
+                            <constraint firstAttribute="trailing" secondItem="WgS-V8-4wx" secondAttribute="trailing" constant="-20" id="VPp-zK-KLh"/>
+                            <constraint firstItem="XOQ-NP-UjA" firstAttribute="top" secondItem="ov9-OY-DEh" secondAttribute="bottom" constant="32" id="WFr-0x-XTb"/>
+                            <constraint firstItem="WgS-V8-4wx" firstAttribute="top" secondItem="6hs-6P-ETF" secondAttribute="top" id="Y9I-c2-zjH"/>
+                            <constraint firstAttribute="bottom" secondItem="WgS-V8-4wx" secondAttribute="bottom" constant="-34" id="paR-bP-xfK"/>
+                            <constraint firstItem="WgS-V8-4wx" firstAttribute="leading" secondItem="6hs-6P-ETF" secondAttribute="leading" constant="-20" id="rOJ-c0-YFw"/>
+                            <constraint firstItem="ov9-OY-DEh" firstAttribute="top" secondItem="g1p-fa-iMX" secondAttribute="top" constant="24" id="ri6-GJ-aEg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oIi-us-51F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KeS-ld-TWU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1033" y="-238"/>
+        </scene>
+        <!--Expert Explanation-->
+        <scene sceneID="ZYT-BZ-4Ut">
+            <objects>
+                <viewController id="fWB-31-Wb9" userLabel="Expert Explanation" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7SE-F2-9i3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Secret Tunnel Background" translatesAutoresizingMaskIntoConstraints="NO" id="8iZ-Tp-CMh">
+                                <rect key="frame" x="-20" y="0.0" width="454" height="876"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5F-5h-HX4">
+                                <rect key="frame" x="24" y="24" width="80" height="40"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="6" minY="0.0" maxX="6" maxY="0.0"/>
+                                <state key="normal" title="Back" backgroundImage="Button Background">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="av4-MM-h6N" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="AFA-Q7-5Mj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="350" translatesAutoresizingMaskIntoConstraints="NO" id="fPx-zM-WaQ">
+                                <rect key="frame" x="32" y="96" width="350" height="208"/>
+                                <string key="text">In Expert mode, the code is 7 digits long, containing the numbers 1-7. You get 6 guesses to figure out the code, and you get to reveal a number after your 4th guess. </string>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="26"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hc1-Dw-YX3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m5F-5h-HX4" firstAttribute="top" secondItem="Hc1-Dw-YX3" secondAttribute="top" constant="24" id="0wd-RJ-4x2"/>
+                            <constraint firstAttribute="bottom" secondItem="8iZ-Tp-CMh" secondAttribute="bottom" constant="-34" id="Bpp-w7-PNk"/>
+                            <constraint firstItem="8iZ-Tp-CMh" firstAttribute="leading" secondItem="7SE-F2-9i3" secondAttribute="leading" constant="-20" id="E3u-tl-tOo"/>
+                            <constraint firstItem="fPx-zM-WaQ" firstAttribute="centerX" secondItem="7SE-F2-9i3" secondAttribute="centerX" id="Y2G-Bw-cBB"/>
+                            <constraint firstItem="fPx-zM-WaQ" firstAttribute="top" secondItem="m5F-5h-HX4" secondAttribute="bottom" constant="32" id="dBu-AW-Zc8"/>
+                            <constraint firstAttribute="trailing" secondItem="8iZ-Tp-CMh" secondAttribute="trailing" constant="-20" id="sL5-Yb-QBE"/>
+                            <constraint firstItem="8iZ-Tp-CMh" firstAttribute="top" secondItem="7SE-F2-9i3" secondAttribute="top" id="uRI-Eh-ZP0"/>
+                            <constraint firstItem="m5F-5h-HX4" firstAttribute="leading" secondItem="Hc1-Dw-YX3" secondAttribute="leading" constant="24" id="ve7-iJ-mqZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z51-1L-vK6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tTs-dq-Loa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1033" y="498"/>
+        </scene>
+        <!--Brainiac Explanation-->
+        <scene sceneID="VYa-kU-dIl">
+            <objects>
+                <viewController id="BfC-PP-5mh" userLabel="Brainiac Explanation" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Ty-Yd-GgI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Secret Tunnel Background" translatesAutoresizingMaskIntoConstraints="NO" id="ef6-7D-kfD">
+                                <rect key="frame" x="-20" y="0.0" width="454" height="876"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTU-Pe-DeL">
+                                <rect key="frame" x="24" y="24" width="80" height="40"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="26"/>
+                                <inset key="contentEdgeInsets" minX="6" minY="0.0" maxX="6" maxY="0.0"/>
+                                <state key="normal" title="Back" backgroundImage="Button Background">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="av4-MM-h6N" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="EyG-hy-k8t"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="350" translatesAutoresizingMaskIntoConstraints="NO" id="hsa-3c-wb1">
+                                <rect key="frame" x="32" y="96" width="350" height="260"/>
+                                <string key="text">In brainiac mode, you are given 6 random guesses and their scores. From just that information,  you have to figure out the code. The code is 6 digits long, and each number can only appear once. </string>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="26"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TRm-YX-kJ6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ef6-7D-kfD" firstAttribute="top" secondItem="0Ty-Yd-GgI" secondAttribute="top" id="28P-pA-SEd"/>
+                            <constraint firstAttribute="bottom" secondItem="ef6-7D-kfD" secondAttribute="bottom" constant="-34" id="5r3-7K-I4M"/>
+                            <constraint firstItem="gTU-Pe-DeL" firstAttribute="leading" secondItem="TRm-YX-kJ6" secondAttribute="leading" constant="24" id="7o0-t6-4hs"/>
+                            <constraint firstItem="hsa-3c-wb1" firstAttribute="centerX" secondItem="0Ty-Yd-GgI" secondAttribute="centerX" id="90A-m8-Sm5"/>
+                            <constraint firstAttribute="trailing" secondItem="ef6-7D-kfD" secondAttribute="trailing" constant="-20" id="Du7-Ie-P96"/>
+                            <constraint firstItem="gTU-Pe-DeL" firstAttribute="top" secondItem="TRm-YX-kJ6" secondAttribute="top" constant="24" id="aAK-Nn-KeA"/>
+                            <constraint firstItem="ef6-7D-kfD" firstAttribute="leading" secondItem="0Ty-Yd-GgI" secondAttribute="leading" constant="-20" id="eZD-b1-V6y"/>
+                            <constraint firstItem="hsa-3c-wb1" firstAttribute="top" secondItem="gTU-Pe-DeL" secondAttribute="bottom" constant="32" id="yge-hK-U8U"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SLX-q2-Ygu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lKn-Wc-7It" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1033" y="1225"/>
+        </scene>
+        <!--Mobius Explanation-->
+        <scene sceneID="pFK-sE-vx0">
+            <objects>
+                <viewController id="gh1-cZ-20j" userLabel="Mobius Explanation" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eBY-7L-TcW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Secret Tunnel Background" translatesAutoresizingMaskIntoConstraints="NO" id="z0w-h3-AWm">
+                                <rect key="frame" x="-20" y="0.0" width="454" height="876"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihm-44-Grg">
+                                <rect key="frame" x="24" y="24" width="80" height="40"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="6" minY="0.0" maxX="6" maxY="0.0"/>
+                                <state key="normal" title="Back" backgroundImage="Button Background">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ph4-aC-GUb" kind="presentation" modalPresentationStyle="fullScreen" id="bKH-Pt-BER"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="350" translatesAutoresizingMaskIntoConstraints="NO" id="eU9-Yf-5WO">
+                                <rect key="frame" x="32" y="96" width="350" height="390"/>
+                                <string key="text">Mobius mode changes the scoring method. In mobius mode, the two ends are 'next' to each other, as if the numbers wrap around in a circle. This means that if there is a 1 in the first position of your guess, you get 1 point if you guess it's in the second to last position, and 2 points if it's in the last position. </string>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="26"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tTE-na-gi2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="z0w-h3-AWm" firstAttribute="top" secondItem="eBY-7L-TcW" secondAttribute="top" id="39L-Wa-dYS"/>
+                            <constraint firstItem="Ihm-44-Grg" firstAttribute="top" secondItem="tTE-na-gi2" secondAttribute="top" constant="24" id="5C5-47-Ki1"/>
+                            <constraint firstItem="eU9-Yf-5WO" firstAttribute="centerX" secondItem="eBY-7L-TcW" secondAttribute="centerX" id="9Qn-Yv-caN"/>
+                            <constraint firstItem="eU9-Yf-5WO" firstAttribute="top" secondItem="Ihm-44-Grg" secondAttribute="bottom" constant="32" id="Ct2-8S-nI9"/>
+                            <constraint firstAttribute="trailing" secondItem="z0w-h3-AWm" secondAttribute="trailing" constant="-20" id="DAv-dL-uLe"/>
+                            <constraint firstItem="Ihm-44-Grg" firstAttribute="leading" secondItem="tTE-na-gi2" secondAttribute="leading" constant="24" id="dPb-Si-41u"/>
+                            <constraint firstItem="z0w-h3-AWm" firstAttribute="leading" secondItem="eBY-7L-TcW" secondAttribute="leading" constant="-20" id="oVi-qo-LDk"/>
+                            <constraint firstAttribute="bottom" secondItem="z0w-h3-AWm" secondAttribute="bottom" constant="-34" id="rbY-yR-W97"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="72V-jY-dbY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VoP-ix-XU9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1400" y="1325"/>
+        </scene>
+        <!--Main Menu-->
+        <scene sceneID="Z9w-pt-e9C">
+            <objects>
+                <viewController storyboardIdentifier="MainMenuVC" id="av4-MM-h6N" userLabel="Main Menu" customClass="MainMenuViewController" customModule="Secret_Swapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jAJ-VT-IUd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Secret Tunnel Background" translatesAutoresizingMaskIntoConstraints="NO" id="b3K-Ap-0el">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="2vD-y7-peG">
+                                <rect key="frame" x="30" y="261" width="354" height="374"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="P3r-He-PFK">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isi-MI-aql">
+                                                <rect key="frame" x="0.0" y="0.0" width="264" height="80"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="48"/>
+                                                <inset key="contentEdgeInsets" minX="19" minY="0.0" maxX="12" maxY="0.0"/>
+                                                <state key="normal" title="Normal" backgroundImage="Difficulty Background">
+                                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="normalGameMode:" destination="av4-MM-h6N" eventType="touchUpInside" id="D1k-y0-SPs"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="r9w-Fe-VxK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="206-zP-ozv">
+                                                <rect key="frame" x="274" y="0.0" width="80" height="80"/>
+                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="48"/>
+                                                <inset key="contentEdgeInsets" minX="25.5" minY="4" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="?" backgroundImage="Secret Tunnel Help Button ">
+                                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="iq2-Cw-fg5" kind="show" id="PTd-O2-IOe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mte-cl-G7S">
+                                        <rect key="frame" x="0.0" y="98" width="354" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfU-cV-aRr" userLabel="Hard">
+                                                <rect key="frame" x="0.0" y="0.0" width="264" height="80"/>
+                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="48"/>
+                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="12" maxY="0.0"/>
+                                                <state key="normal" title="Hard" backgroundImage="Difficulty Background">
+                                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="hardGameMode:" destination="av4-MM-h6N" eventType="touchUpInside" id="Wrf-o7-Tig"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="8Mn-Fa-Hx2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqX-rN-hgv">
+                                                <rect key="frame" x="274" y="0.0" width="80" height="80"/>
+                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="48"/>
+                                                <inset key="contentEdgeInsets" minX="25.5" minY="4" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="?" backgroundImage="Secret Tunnel Help Button ">
+                                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="hu1-pl-ByM" kind="show" id="Jb6-vE-FhZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lLt-D7-z2f">
+                                        <rect key="frame" x="0.0" y="196" width="354" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yD-4G-vxU">
+                                                <rect key="frame" x="0.0" y="0.0" width="264" height="80"/>
+                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="48"/>
+                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="12" maxY="0.0"/>
+                                                <state key="normal" title="Expert" backgroundImage="Difficulty Background">
+                                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="expertGameMode:" destination="av4-MM-h6N" eventType="touchUpInside" id="B5Y-ci-app"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="6nX-bb-niV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehF-qj-HYu">
+                                                <rect key="frame" x="274" y="0.0" width="80" height="80"/>
+                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="48"/>
+                                                <inset key="contentEdgeInsets" minX="25.5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="?" backgroundImage="Secret Tunnel Help Button ">
+                                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="fWB-31-Wb9" kind="showDetail" id="zN9-5B-ikb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1e0-ny-lwD">
+                                        <rect key="frame" x="0.0" y="294" width="354" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q39-mZ-LUy">
+                                                <rect key="frame" x="0.0" y="0.0" width="264" height="80"/>
+                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="48"/>
+                                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="12" maxY="0.0"/>
+                                                <state key="normal" title="Brainiac" backgroundImage="Difficulty Background">
+                                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="brainiacGameMode:" destination="av4-MM-h6N" eventType="touchUpInside" id="cly-GN-3qN"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="BUW-YQ-lSR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFA-6N-an0">
+                                                <rect key="frame" x="274" y="0.0" width="80" height="80"/>
+                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="48"/>
+                                                <inset key="contentEdgeInsets" minX="25.5" minY="4" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="?" backgroundImage="Secret Tunnel Help Button ">
+                                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="BfC-PP-5mh" kind="show" id="cRc-bu-AXQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secret Swapper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4R-Fr-H5H">
+                                <rect key="frame" x="14" y="92" width="386.5" height="46"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="46"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWb-Qu-f8P">
+                                <rect key="frame" x="59.5" y="750" width="295" height="80"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="44"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <inset key="contentEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Custom Game" backgroundImage="Difficulty Background">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ph4-aC-GUb" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="cAd-h7-E3Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CTC-Qs-Bud"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b3K-Ap-0el" firstAttribute="top" secondItem="jAJ-VT-IUd" secondAttribute="top" id="0pl-m9-nM9"/>
+                            <constraint firstItem="b3K-Ap-0el" firstAttribute="leading" secondItem="jAJ-VT-IUd" secondAttribute="leading" id="1uI-Gc-0co"/>
+                            <constraint firstItem="CTC-Qs-Bud" firstAttribute="bottom" secondItem="jWb-Qu-f8P" secondAttribute="bottom" constant="32" id="8hB-0q-XI5"/>
+                            <constraint firstItem="jWb-Qu-f8P" firstAttribute="centerX" secondItem="jAJ-VT-IUd" secondAttribute="centerX" id="Krd-R9-gKH"/>
+                            <constraint firstItem="2vD-y7-peG" firstAttribute="centerY" secondItem="jAJ-VT-IUd" secondAttribute="centerY" id="RBG-G4-ZHe"/>
+                            <constraint firstItem="i4R-Fr-H5H" firstAttribute="top" secondItem="CTC-Qs-Bud" secondAttribute="top" constant="48" id="aqc-jY-0AY"/>
+                            <constraint firstAttribute="trailing" secondItem="b3K-Ap-0el" secondAttribute="trailing" id="o0y-wQ-iet"/>
+                            <constraint firstAttribute="bottom" secondItem="b3K-Ap-0el" secondAttribute="bottom" id="pSI-dL-eE8"/>
+                            <constraint firstItem="2vD-y7-peG" firstAttribute="centerX" secondItem="jAJ-VT-IUd" secondAttribute="centerX" id="xoO-uH-erx"/>
+                            <constraint firstItem="i4R-Fr-H5H" firstAttribute="centerX" secondItem="jAJ-VT-IUd" secondAttribute="centerX" id="zJa-jh-Nf8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="am7-sv-jdp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ss-KQ-KY4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="88"/>
+        </scene>
+        <!--Custom Game-->
+        <scene sceneID="17f-oZ-8Ak">
+            <objects>
+                <viewController storyboardIdentifier="CustomGameVC" id="ph4-aC-GUb" userLabel="Custom Game" customClass="CustomGameViewController" customModule="Secret_Swapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ONo-wp-wQ3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Secret Tunnel Background" translatesAutoresizingMaskIntoConstraints="NO" id="g97-ii-jse">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="etO-b0-cni">
+                                <rect key="frame" x="35" y="235" width="344.5" height="298"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yBF-dx-PLV">
+                                        <rect key="frame" x="0.0" y="0.0" width="317.5" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Of Guesses 1-8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQM-vy-EdK">
+                                                <rect key="frame" x="0.0" y="0.0" width="277.5" height="34"/>
+                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="22"/>
+                                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ys-wq-RV0">
+                                                <rect key="frame" x="285.5" y="0.0" width="32" height="34"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7OI-il-BZ0">
+                                        <rect key="frame" x="0.0" y="54" width="344.5" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reveal after Guesses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IU2-AJ-8Gb" userLabel="Reveal after guesses">
+                                                <rect key="frame" x="0.0" y="0.0" width="264.5" height="34"/>
+                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="22"/>
+                                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jzS-ou-UEK">
+                                                <rect key="frame" x="272.5" y="0.0" width="32" height="34"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LcD-1U-FFE">
+                                                <rect key="frame" x="312.5" y="0.0" width="32" height="34"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="M1i-yZ-bPk">
+                                        <rect key="frame" x="0.0" y="108" width="317.5" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Of Repeats 1-9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMN-Xl-ipS" userLabel="Number of Repeats">
+                                                <rect key="frame" x="0.0" y="0.0" width="277.5" height="34"/>
+                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="22"/>
+                                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A6I-GV-HGi">
+                                                <rect key="frame" x="285.5" y="0.0" width="32" height="34"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="N1m-Jk-z2G">
+                                        <rect key="frame" x="0.0" y="162" width="278" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Length Of Code 1-9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiU-Pj-bH2">
+                                                <rect key="frame" x="0.0" y="0.0" width="238" height="34"/>
+                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="22"/>
+                                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QkY-js-K4O">
+                                                <rect key="frame" x="246" y="0.0" width="32" height="34"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u5b-M6-LTZ">
+                                        <rect key="frame" x="0.0" y="216" width="263.5" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Mobius Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10P-Cf-ztN">
+                                                <rect key="frame" x="0.0" y="0.0" width="145.5" height="31"/>
+                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="22"/>
+                                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DGN-pT-E05">
+                                                <rect key="frame" x="153.5" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4p-gH-TRf">
+                                                <rect key="frame" x="210.5" y="0.0" width="53" height="31"/>
+                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="32"/>
+                                                <inset key="contentEdgeInsets" minX="17" minY="8" maxX="16" maxY="5"/>
+                                                <state key="normal" title="?" backgroundImage="Score Label">
+                                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="gh1-cZ-20j" kind="show" identifier="goToMobius" id="r0p-GF-r1v"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tpz-jS-qPF">
+                                        <rect key="frame" x="0.0" y="267" width="229" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brainiac Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVZ-WN-0ij">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="31"/>
+                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="22"/>
+                                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NcU-eF-vIG">
+                                                <rect key="frame" x="180" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwj-Ew-pfZ">
+                                <rect key="frame" x="154.5" y="790" width="105" height="40"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="6" minY="0.0" maxX="12" maxY="0.0"/>
+                                <state key="normal" title=" Play!" backgroundImage="Button Background">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playGame:" destination="ph4-aC-GUb" eventType="touchUpInside" id="ywC-0S-tb0"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToGamePlay" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="r6H-iC-m6s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFc-Yx-hBO">
+                                <rect key="frame" x="24" y="54" width="80" height="40"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="6" minY="0.0" maxX="6" maxY="0.0"/>
+                                <state key="normal" title="Back" backgroundImage="Button Background">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="av4-MM-h6N" kind="presentation" identifier="goToMainMenu" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="xhC-yT-KHA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="A5P-NA-MYD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="g97-ii-jse" secondAttribute="bottom" id="Fnn-ss-Kvv"/>
+                            <constraint firstItem="etO-b0-cni" firstAttribute="centerY" secondItem="ONo-wp-wQ3" secondAttribute="centerY" constant="-64" id="G4w-vF-eaY"/>
+                            <constraint firstItem="vwj-Ew-pfZ" firstAttribute="centerX" secondItem="ONo-wp-wQ3" secondAttribute="centerX" id="KDu-Wd-6QE"/>
+                            <constraint firstItem="pFc-Yx-hBO" firstAttribute="leading" secondItem="A5P-NA-MYD" secondAttribute="leading" constant="24" id="Onn-rf-TFi"/>
+                            <constraint firstItem="etO-b0-cni" firstAttribute="centerX" secondItem="ONo-wp-wQ3" secondAttribute="centerX" id="Oq2-Az-9J2"/>
+                            <constraint firstItem="pFc-Yx-hBO" firstAttribute="top" secondItem="A5P-NA-MYD" secondAttribute="top" constant="10" id="QoX-lf-uJG"/>
+                            <constraint firstAttribute="trailing" secondItem="g97-ii-jse" secondAttribute="trailing" id="TsD-CB-Zmn"/>
+                            <constraint firstItem="g97-ii-jse" firstAttribute="top" secondItem="ONo-wp-wQ3" secondAttribute="top" id="fhd-qR-k7F"/>
+                            <constraint firstItem="A5P-NA-MYD" firstAttribute="bottom" secondItem="vwj-Ew-pfZ" secondAttribute="bottom" constant="32" id="n7W-B8-nKT"/>
+                            <constraint firstItem="g97-ii-jse" firstAttribute="leading" secondItem="ONo-wp-wQ3" secondAttribute="leading" id="qvo-Wb-hOW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="L4E-Ny-Pol"/>
+                    <connections>
+                        <outlet property="brainiacModeSwitch" destination="NcU-eF-vIG" id="sCR-ns-tBN"/>
+                        <outlet property="lengthOfCode" destination="QkY-js-K4O" id="sCk-Ux-rgz"/>
+                        <outlet property="mobiusModeSwitch" destination="DGN-pT-E05" id="yE7-fa-63K"/>
+                        <outlet property="numberOfGuesses" destination="0Ys-wq-RV0" id="5Rx-4z-Wdf"/>
+                        <outlet property="numberOfRepeats" destination="A6I-GV-HGi" id="Bi9-1J-GFL"/>
+                        <outlet property="revealAfter1" destination="jzS-ou-UEK" id="gkG-Ql-1DM"/>
+                        <outlet property="revealAfter2" destination="LcD-1U-FFE" id="kSM-16-zEC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zgL-tO-128" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1398.5507246376812" y="612.72321428571422"/>
+        </scene>
+        <!--GamePlay-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="GamePlayVC" id="BYZ-38-t0r" userLabel="GamePlay" customClass="ViewController" customModule="Secret_Swapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Secret Tunnel Background" translatesAutoresizingMaskIntoConstraints="NO" id="KtL-Pe-wwm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Guess Label" translatesAutoresizingMaskIntoConstraints="NO" id="Wgj-Gd-VnM" userLabel="Submit Button Background">
+                                <rect key="frame" x="111" y="220" width="192" height="48"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Revealed Letters" translatesAutoresizingMaskIntoConstraints="NO" id="hJn-yJ-Z7Z" userLabel="Revealed Letters">
+                                <rect key="frame" x="15" y="300" width="384" height="48"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="LtA-3N-hsf">
+                                <rect key="frame" x="32" y="358" width="256" height="408"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8B5-DH-9Kd">
+                                        <rect key="frame" x="0.0" y="0.0" width="256" height="48"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Guess Label" translatesAutoresizingMaskIntoConstraints="NO" id="4lS-Hb-ghh">
+                                                <rect key="frame" x="0.0" y="0.0" width="192" height="48"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Score Label" translatesAutoresizingMaskIntoConstraints="NO" id="TgB-qt-tys">
+                                                <rect key="frame" x="208" y="0.0" width="48" height="48"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="J6t-Io-fYQ">
+                                        <rect key="frame" x="0.0" y="60" width="256" height="48"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Guess Label" translatesAutoresizingMaskIntoConstraints="NO" id="OfP-3Y-OLJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="192" height="48"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Score Label" translatesAutoresizingMaskIntoConstraints="NO" id="bEU-71-Emw">
+                                                <rect key="frame" x="208" y="0.0" width="48" height="48"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="d8r-0v-L8S">
+                                        <rect key="frame" x="0.0" y="120" width="256" height="48"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Guess Label" translatesAutoresizingMaskIntoConstraints="NO" id="n65-mp-Des">
+                                                <rect key="frame" x="0.0" y="0.0" width="192" height="48"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Score Label" translatesAutoresizingMaskIntoConstraints="NO" id="HSa-Ne-mBo">
+                                                <rect key="frame" x="208" y="0.0" width="48" height="48"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="VDn-N3-AC6">
+                                        <rect key="frame" x="0.0" y="180" width="256" height="48"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Guess Label" translatesAutoresizingMaskIntoConstraints="NO" id="RGb-rN-oDP">
+                                                <rect key="frame" x="0.0" y="0.0" width="192" height="48"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Score Label" translatesAutoresizingMaskIntoConstraints="NO" id="AAC-d2-5WV">
+                                                <rect key="frame" x="208" y="0.0" width="48" height="48"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="n3c-lb-NYB">
+                                        <rect key="frame" x="0.0" y="240" width="256" height="48"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Guess Label" translatesAutoresizingMaskIntoConstraints="NO" id="jpu-yX-1nX">
+                                                <rect key="frame" x="0.0" y="0.0" width="192" height="48"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Score Label" translatesAutoresizingMaskIntoConstraints="NO" id="ovy-RY-Izb">
+                                                <rect key="frame" x="208" y="0.0" width="48" height="48"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ajd-06-Zpx">
+                                        <rect key="frame" x="0.0" y="300" width="256" height="48"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Guess Label" translatesAutoresizingMaskIntoConstraints="NO" id="ogo-0K-YNU">
+                                                <rect key="frame" x="0.0" y="0.0" width="192" height="48"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Score Label" translatesAutoresizingMaskIntoConstraints="NO" id="QTo-Wy-Zka">
+                                                <rect key="frame" x="208" y="0.0" width="48" height="48"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="I4x-Cz-fFn">
+                                        <rect key="frame" x="0.0" y="360" width="256" height="48"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Guess Label" translatesAutoresizingMaskIntoConstraints="NO" id="dup-Q1-SDK">
+                                                <rect key="frame" x="0.0" y="0.0" width="192" height="48"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Score Label" translatesAutoresizingMaskIntoConstraints="NO" id="lFP-me-hOl">
+                                                <rect key="frame" x="208" y="0.0" width="48" height="48"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess # 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcz-1g-bDf">
+                                <rect key="frame" x="120.5" y="92" width="173" height="32"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="32"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7wO-45-bR2">
+                                <rect key="frame" x="48" y="366" width="0.0" height="0.0"/>
+                                <edgeInsets key="layoutMargins" top="8" left="50" bottom="8" right="8"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="36"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="48" translatesAutoresizingMaskIntoConstraints="NO" id="fLP-Ci-skL">
+                                <rect key="frame" x="243" y="366" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="36"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yR1-b3-LBa">
+                                <rect key="frame" x="48" y="390" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="36"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ws5-9U-Gqs">
+                                <rect key="frame" x="243" y="390" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="36"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXw-JJ-pmu">
+                                <rect key="frame" x="48" y="414" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="36"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCb-Xt-M9f">
+                                <rect key="frame" x="243" y="414" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="36"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vV1-XS-gpS">
+                                <rect key="frame" x="48" y="438" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="36"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMM-CW-fat">
+                                <rect key="frame" x="243" y="438" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="36"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XU4-wm-Nfh">
+                                <rect key="frame" x="48" y="462" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="36"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLQ-km-6jw">
+                                <rect key="frame" x="243" y="462" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="36"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOX-cy-xSp">
+                                <rect key="frame" x="48" y="486" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="36"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="So4-gH-QR0">
+                                <rect key="frame" x="243" y="486" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="36"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhM-3S-Tsx">
+                                <rect key="frame" x="48" y="510" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="36"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyl-uf-h7h">
+                                <rect key="frame" x="243" y="510" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y2t-nG-fRU">
+                                <rect key="frame" x="1" y="140" width="412.5" height="124.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Guess" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="Lzh-MQ-nsh">
+                                        <rect key="frame" x="0.0" y="0.0" width="412.5" height="49.5"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="40"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwU-Ws-A8w">
+                                        <rect key="frame" x="0.0" y="77.5" width="412.5" height="47"/>
+                                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="40"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="7" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aH0-IQ-BZi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgV-kA-wZg">
+                                <rect key="frame" x="148.5" y="840" width="117" height="40"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="2" maxX="8" maxY="2"/>
+                                <state key="normal" title="Restart" backgroundImage="Button Background">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="restart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PQm-3O-haY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSF-bD-SRX">
+                                <rect key="frame" x="24" y="54" width="80" height="40"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="6" minY="0.0" maxX="6" maxY="0.0"/>
+                                <state key="normal" title="Back" backgroundImage="Button Background">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="av4-MM-h6N" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="E69-zK-GJ0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxj-fv-C2c" userLabel="Revealed Letters">
+                                <rect key="frame" x="207" y="308" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="36"/>
+                                <color key="textColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KXw-JJ-pmu" firstAttribute="top" secondItem="yR1-b3-LBa" secondAttribute="bottom" constant="24" id="1rg-71-TE4"/>
+                            <constraint firstItem="KtL-Pe-wwm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="55n-oI-rhG"/>
+                            <constraint firstItem="YhM-3S-Tsx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="5Wa-pX-aNV"/>
+                            <constraint firstItem="Ws5-9U-Gqs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="243" id="5ly-hw-PfR"/>
+                            <constraint firstItem="YhM-3S-Tsx" firstAttribute="top" secondItem="zOX-cy-xSp" secondAttribute="bottom" constant="24" id="6SG-b5-7E9"/>
+                            <constraint firstItem="LtA-3N-hsf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="7Fb-2q-CKe"/>
+                            <constraint firstItem="vV1-XS-gpS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="9wT-qO-0Af"/>
+                            <constraint firstItem="jCb-Xt-M9f" firstAttribute="top" secondItem="Ws5-9U-Gqs" secondAttribute="bottom" constant="24" id="Bym-n4-zlB"/>
+                            <constraint firstAttribute="bottom" secondItem="hgV-kA-wZg" secondAttribute="bottom" constant="16" id="E8a-W8-wMa"/>
+                            <constraint firstItem="fLP-Ci-skL" firstAttribute="top" secondItem="Wgj-Gd-VnM" secondAttribute="bottom" constant="98" id="IWI-51-fVf"/>
+                            <constraint firstItem="yR1-b3-LBa" firstAttribute="top" secondItem="7wO-45-bR2" secondAttribute="bottom" constant="24" id="Ilt-E6-CDZ"/>
+                            <constraint firstAttribute="trailing" secondItem="KtL-Pe-wwm" secondAttribute="trailing" id="Ive-2d-EM2"/>
+                            <constraint firstItem="Vcz-1g-bDf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JEC-7S-tXU"/>
+                            <constraint firstItem="Wgj-Gd-VnM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KFG-Xh-zhe"/>
+                            <constraint firstAttribute="bottom" secondItem="KtL-Pe-wwm" secondAttribute="bottom" id="KJT-h6-Vpq"/>
+                            <constraint firstItem="Vcz-1g-bDf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="MVC-RB-oBr"/>
+                            <constraint firstItem="KtL-Pe-wwm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NAj-f7-fEH"/>
+                            <constraint firstItem="Y2t-nG-fRU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O3D-oj-cqM"/>
+                            <constraint firstItem="lyl-uf-h7h" firstAttribute="top" secondItem="So4-gH-QR0" secondAttribute="bottom" constant="24" id="RHc-xB-zaR"/>
+                            <constraint firstItem="DLQ-km-6jw" firstAttribute="top" secondItem="UMM-CW-fat" secondAttribute="bottom" constant="24" id="Rau-FN-cWF"/>
+                            <constraint firstItem="XU4-wm-Nfh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="Rnd-xA-wmx"/>
+                            <constraint firstItem="jCb-Xt-M9f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="243" id="SdR-Y4-k5O"/>
+                            <constraint firstItem="DLQ-km-6jw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="243" id="U8Y-TJ-Obe"/>
+                            <constraint firstItem="LtA-3N-hsf" firstAttribute="top" secondItem="Wgj-Gd-VnM" secondAttribute="bottom" constant="90" id="VCz-XT-bf1"/>
+                            <constraint firstItem="vV1-XS-gpS" firstAttribute="top" secondItem="KXw-JJ-pmu" secondAttribute="bottom" constant="24" id="VFj-RB-ywd"/>
+                            <constraint firstItem="UMM-CW-fat" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="243" id="Y7c-fb-8Jc"/>
+                            <constraint firstItem="lyl-uf-h7h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="243" id="aZ7-Wj-ZXA"/>
+                            <constraint firstItem="hJn-yJ-Z7Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bWJ-Dw-4hH"/>
+                            <constraint firstItem="zOX-cy-xSp" firstAttribute="top" secondItem="XU4-wm-Nfh" secondAttribute="bottom" constant="24" id="cfc-bO-LmF"/>
+                            <constraint firstItem="hgV-kA-wZg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cwq-k9-W6V"/>
+                            <constraint firstItem="zOX-cy-xSp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="gPc-w8-8BW"/>
+                            <constraint firstItem="mSF-bD-SRX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="jGP-9x-9Y7"/>
+                            <constraint firstItem="mxj-fv-C2c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jy0-ZE-GZJ"/>
+                            <constraint firstItem="mSF-bD-SRX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="ld1-m4-OsS"/>
+                            <constraint firstItem="XU4-wm-Nfh" firstAttribute="top" secondItem="vV1-XS-gpS" secondAttribute="bottom" constant="24" id="lqT-aJ-rsh"/>
+                            <constraint firstItem="KXw-JJ-pmu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="mKz-gU-duo"/>
+                            <constraint firstItem="So4-gH-QR0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="243" id="mVc-wB-Uao"/>
+                            <constraint firstItem="yR1-b3-LBa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="nFV-Vh-WVq"/>
+                            <constraint firstItem="7wO-45-bR2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="nqo-ca-WHi"/>
+                            <constraint firstItem="So4-gH-QR0" firstAttribute="top" secondItem="DLQ-km-6jw" secondAttribute="bottom" constant="24" id="omB-cq-a1D"/>
+                            <constraint firstItem="Ws5-9U-Gqs" firstAttribute="top" secondItem="fLP-Ci-skL" secondAttribute="bottom" constant="24" id="r9K-X3-SXt"/>
+                            <constraint firstItem="Wgj-Gd-VnM" firstAttribute="top" secondItem="Vcz-1g-bDf" secondAttribute="bottom" constant="96" id="s4u-Hv-hZB"/>
+                            <constraint firstItem="Y2t-nG-fRU" firstAttribute="top" secondItem="Vcz-1g-bDf" secondAttribute="bottom" constant="16" id="sCv-IR-Rm3"/>
+                            <constraint firstItem="UMM-CW-fat" firstAttribute="top" secondItem="jCb-Xt-M9f" secondAttribute="bottom" constant="24" id="sTY-NE-fNF"/>
+                            <constraint firstItem="7wO-45-bR2" firstAttribute="top" secondItem="Wgj-Gd-VnM" secondAttribute="bottom" constant="98" id="sUC-7S-cW7"/>
+                            <constraint firstItem="fLP-Ci-skL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="243" id="uvf-Yo-pa2"/>
+                            <constraint firstItem="mxj-fv-C2c" firstAttribute="top" secondItem="Wgj-Gd-VnM" secondAttribute="bottom" constant="40" id="w3Q-et-xkn"/>
+                            <constraint firstItem="hJn-yJ-Z7Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="256" id="xrV-tT-8um"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Secret Swapper" id="DdQ-U5-Tfh"/>
+                    <connections>
+                        <outlet property="guess1" destination="7wO-45-bR2" id="eDe-Sj-bE3"/>
+                        <outlet property="guess1bg" destination="4lS-Hb-ghh" id="866-GK-EZh"/>
+                        <outlet property="guess2" destination="yR1-b3-LBa" id="Ilx-wi-HvO"/>
+                        <outlet property="guess2bg" destination="OfP-3Y-OLJ" id="mVc-LV-bts"/>
+                        <outlet property="guess3" destination="KXw-JJ-pmu" id="qzM-hc-4if"/>
+                        <outlet property="guess3bg" destination="n65-mp-Des" id="nJn-iy-TST"/>
+                        <outlet property="guess4" destination="vV1-XS-gpS" id="v3k-mw-ByX"/>
+                        <outlet property="guess4bg" destination="RGb-rN-oDP" id="Z7f-We-u4H"/>
+                        <outlet property="guess5" destination="XU4-wm-Nfh" id="Bp3-Ax-QKW"/>
+                        <outlet property="guess5bg" destination="jpu-yX-1nX" id="Zqj-AF-vAS"/>
+                        <outlet property="guess6" destination="zOX-cy-xSp" id="teQ-kn-gfq"/>
+                        <outlet property="guess6bg" destination="ogo-0K-YNU" id="3yU-ER-7wB"/>
+                        <outlet property="guess7" destination="YhM-3S-Tsx" id="mf2-pM-6Xv"/>
+                        <outlet property="guess7bg" destination="dup-Q1-SDK" id="PUC-LR-tUj"/>
+                        <outlet property="instruction" destination="Vcz-1g-bDf" id="mEB-RA-qzh"/>
+                        <outlet property="revealedLetters" destination="mxj-fv-C2c" id="SOb-8b-2I4"/>
+                        <outlet property="score1" destination="fLP-Ci-skL" id="srI-lM-vYn"/>
+                        <outlet property="score1bg" destination="TgB-qt-tys" id="29y-0A-u2F"/>
+                        <outlet property="score2" destination="Ws5-9U-Gqs" id="L35-Cz-wNa"/>
+                        <outlet property="score2bg" destination="bEU-71-Emw" id="nlN-CA-h27"/>
+                        <outlet property="score3" destination="jCb-Xt-M9f" id="U4a-ZR-OfE"/>
+                        <outlet property="score3bg" destination="HSa-Ne-mBo" id="3bC-Ba-m7E"/>
+                        <outlet property="score4" destination="UMM-CW-fat" id="g0w-VW-NSN"/>
+                        <outlet property="score4bg" destination="AAC-d2-5WV" id="Eoh-vC-N42"/>
+                        <outlet property="score5" destination="DLQ-km-6jw" id="Uqu-Uu-Mfz"/>
+                        <outlet property="score5bg" destination="ovy-RY-Izb" id="fwR-AC-P29"/>
+                        <outlet property="score6" destination="So4-gH-QR0" id="skq-12-6bH"/>
+                        <outlet property="score6bg" destination="QTo-Wy-Zka" id="JEc-hF-fpZ"/>
+                        <outlet property="score7" destination="lyl-uf-h7h" id="wk7-LH-FJG"/>
+                        <outlet property="score7bg" destination="lFP-me-hOl" id="BgT-FR-2M5"/>
+                        <outlet property="textEntry" destination="Lzh-MQ-nsh" id="pbk-r1-pe4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2805.7971014492755" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6nX-bb-niV"/>
+        <segue reference="cAd-h7-E3Y"/>
+        <segue reference="QhI-dt-PJO"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Button Background" width="80" height="40"/>
+        <image name="Difficulty Background" width="264" height="80"/>
+        <image name="Guess Label" width="192" height="48"/>
+        <image name="Revealed Letters" width="384" height="48"/>
+        <image name="Score Label" width="48" height="48"/>
+        <image name="Secret Tunnel Background" width="1080" height="1920"/>
+        <image name="Secret Tunnel Help Button " width="80" height="80"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

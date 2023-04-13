@@ -1,0 +1,16 @@
+/* Used to make image the correct size */
+img {
+    width: 800px;
+}
+
+/* Gives some space between this and the picture*/
+#button-box {
+    margin-bottom: 20px;
+}
+
+/* Sets the description default styling */
+#description {
+    margin-top: 10px;
+    color:gray;
+    width:300px;
+}

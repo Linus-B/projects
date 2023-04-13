@@ -1,0 +1,26 @@
+/*
+ * myBookcase.css
+ * Created - Linus Bendel-Stenzel
+ * Adapted from Erik Steinmetz
+ */
+
+main {
+    background-color: lightgreen;
+}
+
+img {
+    width: 400px;
+    width: auto;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+gcc -Wall -g -o bucket bucket.c

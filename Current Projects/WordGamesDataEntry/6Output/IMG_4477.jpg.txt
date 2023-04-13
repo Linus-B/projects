@@ -1,0 +1,49 @@
+ 
+
+*)
+
+6:47 7 o
+
++ MCE Tnelare(-tel x
+
+YOU WON!
+
+       
+
+WORDS: 25
+
+SCORE: 13100
+
+WORDS: 18
+
+SCORE: 7500
+
+   
+
+2000 1200
+2000 1200
+CHEST | 1200 1200
+TECHS | 1200 400
+1200 400
+1200 400
+|ETCH | 400 400
+400 400
+HETS 400 400 TECH
+400 400
+|SHET | 400 400
+400 100 | HES |
+400 100
+400 100
+| CHE | 100 100 | SET
+(10 more) (3 more)
+
+VIEW ALL WORDS (52)
+
+ 
+
+ 
+
+ 
+
+ 
+

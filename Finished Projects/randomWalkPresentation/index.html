@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Random Walk</title>
+    </head>
+
+    <body>
+        <div id="Header">This is my header</div>
+        <div id="Submit-data">
+            <table>
+                <tr>
+                    <td><label for="dimen"></label>Dimensions:</td>
+                    <td><input type="text" id="dimen" onchange="resetWalk()"></td>
+                </tr>
+                <tr>
+                    <td><label for="rightChance"></label>Right Chance:</td>
+                    <td><input type="text" id="rightChance" onchange="resetWalk()"></td>
+                    <td><span>Left: </span><span id="leftChance">100</span></td>
+                </tr>
+                <tr>
+                    <td><label for="upChance"></label>Up Chance:</td>
+                    <td><input type="text" id="upChance" onchange="resetWalk()"></td>
+                    <td><span>Down: </span><span id="downChance">100</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <canvas id="myCanvas" width="1250" height="1000" style="border:1px solid #c3c3c3;"></canvas>
+
+        <script src="randomWalk.js"></script>
+    </body>
+</html>

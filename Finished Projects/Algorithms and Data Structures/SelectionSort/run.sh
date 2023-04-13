@@ -1,0 +1,1 @@
+./selection input.txt output.txt

@@ -1,0 +1,56 @@
+?- consult('animals.pl').
+true.
+
+?- tiger_exists().
+Tigers: tigger
+true ;
+Tigers: jumpy
+true.
+
+?- tiger_and_cow().
+Tiger: tigger Cow: chum
+true ;
+Tiger: tigger Cow: whatever
+true ;
+Tiger: jumpy Cow: chum
+true ;
+Tiger: jumpy Cow: whatever
+true.
+
+?- what_is_lion().
+true ;
+true ;
+true ;
+false.
+
+?- what_is_cow().
+false.
+
+?- tigers_eat().
+Tiger catches: chum
+true ;
+Tiger catches: whatever
+true ;
+Tiger catches: bow
+true ;
+Tiger catches: barky
+true ;
+Tiger catches: purrs
+true ;
+Tiger catches: meow
+true ;
+Tiger catches: chum
+true ;
+Tiger catches: whatever
+true ;
+Tiger catches: bow
+true ;
+Tiger catches: barky
+true ;
+Tiger catches: purrs
+true ;
+Tiger catches: meow
+true ;
+false.
+
+?- 

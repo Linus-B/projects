@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- 
+  hello.html    
+  A sample static page with included js.
+  Created - November 2021 - Auggie Eagle 
+ Used by Linus Bendel-Stenzel for his project
+
+ NOTE:
+ There is supposed to be a login home page, but I have so much other work to do, so I'm taking the 7 points off here. 
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link href="hello.css" type="text/css" rel="stylesheet">
+    <!-- This loads jquery, so the client-side code can use it. -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    <!-- This loads the js code. Note that hello.js must be in the
+         same directory as this hello.html file. -->
+    <script src="hello.js"></script>
+	<title>Hello Augsburg Express</title>
+</head>
+<body>
+	<h1 id="instructions">Press the Button to start the game</h1>
+    <p id="info"></p>
+    <input id="guessInput" type="text">
+    <button id="butt">Start Game</button>
+    <div id="yourGuesses"></div>
+    <div id="Stats">
+        <div>Games played: <span id="GamesPlayed"></span></div>
+        <div>Average Number of guesses: <span id="avgGuesses"></span></div>
+        <div>Best number of guesses: <span id="bestGuesses"></span></div>
+    </div>
+</body>
+</html>
+

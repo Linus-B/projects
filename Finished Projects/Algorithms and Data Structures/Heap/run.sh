@@ -1,0 +1,1 @@
+./huffman input.txt output.txt
