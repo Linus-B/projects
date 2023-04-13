@@ -1,0 +1,5 @@
+[fine: 1]
+[hello: 1]
+[it: 1]
+[the: 1]
+[was: 1]

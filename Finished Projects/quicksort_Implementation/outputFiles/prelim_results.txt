@@ -1,0 +1,23 @@
+The file stats.txt has a list of all the data collected so far. 
+This is currently what it has. 
+10000 366357 538110
+50000 2115483 3000921
+100000 4547579 6588417
+1000000 53745751 76557007
+
+First I want you to notice that the ratio of Comparisons:Assignments is 
+consistently between 0.68 and 0.7 This indicates that they increase equally fast,
+so in a new table I will combine them into a column for Comparisons + Assignments
+I'm now going to add a column for n(log base 2 of n) and a column for n^2.
+I'll also add labels and commas to make it mroe readable
+N         N*lg(N)     N^2        Comparisons + Assignments
+1.0e04    1.3e05      1.0e07            9.0e05
+5.0e04    7.8e05      2.5e09            5.1e06
+1.0e05    1.6e06      1.0e10            1.1e07
+1.0e06    2.0e07      1.0e12            1.3e08
+
+With a cursory look, we can see that N^2 is going up by 2 factors of magnitude every time 
+N goes up by 1. But C+A is going up by 1 order of magintude as well, so it is likely not N^2.
+If we take the ratio (C+A) / N*lg(N), we get 0.15 +/- 0.003. 
+Therefore it seems that the Comparisons + Assignments are N*lg(N), so then
+quicksort, as we have implemented it, is in N*lg(N) time. 
