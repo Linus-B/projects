@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		156CC2A04DD80A48F46F8023 /* Pods_Trap_Square_MessagesExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873C8B38A145E00FD92D218C /* Pods_Trap_Square_MessagesExtension.framework */; };
+		4602C62CC5D7BEC43D20049A /* Pods_Trap_Square.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8A8BD7F355264DE7A07C7F /* Pods_Trap_Square.framework */; };
+		547D78CB2608418E000D872B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 547D78CA2608418E000D872B /* Assets.xcassets */; };
+		547D78D22608418E000D872B /* Trap Square MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 547D78D12608418E000D872B /* Trap Square MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		547D78D72608418E000D872B /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547D78D62608418E000D872B /* Messages.framework */; };
+		547D78DA2608418E000D872B /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D78D92608418E000D872B /* MessagesViewController.swift */; };
+		547D78DD2608418E000D872B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 547D78DB2608418E000D872B /* MainInterface.storyboard */; };
+		547D78DF2608418F000D872B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 547D78DE2608418F000D872B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		547D78D32608418E000D872B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 547D78C12608418C000D872B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 547D78D02608418E000D872B;
+			remoteInfo = "Trap Square MessagesExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		547D78E62608418F000D872B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				547D78D22608418E000D872B /* Trap Square MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2A8A8BD7F355264DE7A07C7F /* Pods_Trap_Square.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trap_Square.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		547D78C72608418C000D872B /* Trap Square.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trap Square.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		547D78CA2608418E000D872B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		547D78CC2608418E000D872B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		547D78D12608418E000D872B /* Trap Square MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Trap Square MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		547D78D62608418E000D872B /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		547D78D92608418E000D872B /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		547D78DC2608418E000D872B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		547D78DE2608418F000D872B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		547D78E02608418F000D872B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		873C8B38A145E00FD92D218C /* Pods_Trap_Square_MessagesExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trap_Square_MessagesExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E8872C6A37B57C5B02275FB /* Pods-Trap Square MessagesExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trap Square MessagesExtension.release.xcconfig"; path = "Target Support Files/Pods-Trap Square MessagesExtension/Pods-Trap Square MessagesExtension.release.xcconfig"; sourceTree = "<group>"; };
+		8FCF4168AA9304A82D14554C /* Pods-Trap Square.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trap Square.release.xcconfig"; path = "Target Support Files/Pods-Trap Square/Pods-Trap Square.release.xcconfig"; sourceTree = "<group>"; };
+		9A0098A51856A504EAC1ED74 /* Pods-Trap Square.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trap Square.debug.xcconfig"; path = "Target Support Files/Pods-Trap Square/Pods-Trap Square.debug.xcconfig"; sourceTree = "<group>"; };
+		B353BFE09E78D2F2D235AC22 /* Pods-Trap Square MessagesExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trap Square MessagesExtension.debug.xcconfig"; path = "Target Support Files/Pods-Trap Square MessagesExtension/Pods-Trap Square MessagesExtension.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		547D78CE2608418E000D872B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547D78D72608418E000D872B /* Messages.framework in Frameworks */,
+				156CC2A04DD80A48F46F8023 /* Pods_Trap_Square_MessagesExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81130062BDC400368E830CE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4602C62CC5D7BEC43D20049A /* Pods_Trap_Square.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		547D78C02608418C000D872B = {
+			isa = PBXGroup;
+			children = (
+				547D78C92608418C000D872B /* Trap Square */,
+				547D78D82608418E000D872B /* Trap Square MessagesExtension */,
+				547D78D52608418E000D872B /* Frameworks */,
+				547D78C82608418C000D872B /* Products */,
+				C7ED49A3F1489F3D92E8BAC8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		547D78C82608418C000D872B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				547D78C72608418C000D872B /* Trap Square.app */,
+				547D78D12608418E000D872B /* Trap Square MessagesExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		547D78C92608418C000D872B /* Trap Square */ = {
+			isa = PBXGroup;
+			children = (
+				547D78CA2608418E000D872B /* Assets.xcassets */,
+				547D78CC2608418E000D872B /* Info.plist */,
+			);
+			path = "Trap Square";
+			sourceTree = "<group>";
+		};
+		547D78D52608418E000D872B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				547D78D62608418E000D872B /* Messages.framework */,
+				2A8A8BD7F355264DE7A07C7F /* Pods_Trap_Square.framework */,
+				873C8B38A145E00FD92D218C /* Pods_Trap_Square_MessagesExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		547D78D82608418E000D872B /* Trap Square MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				547D78D92608418E000D872B /* MessagesViewController.swift */,
+				547D78DB2608418E000D872B /* MainInterface.storyboard */,
+				547D78DE2608418F000D872B /* Assets.xcassets */,
+				547D78E02608418F000D872B /* Info.plist */,
+			);
+			path = "Trap Square MessagesExtension";
+			sourceTree = "<group>";
+		};
+		C7ED49A3F1489F3D92E8BAC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A0098A51856A504EAC1ED74 /* Pods-Trap Square.debug.xcconfig */,
+				8FCF4168AA9304A82D14554C /* Pods-Trap Square.release.xcconfig */,
+				B353BFE09E78D2F2D235AC22 /* Pods-Trap Square MessagesExtension.debug.xcconfig */,
+				8E8872C6A37B57C5B02275FB /* Pods-Trap Square MessagesExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		547D78C62608418C000D872B /* Trap Square */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 547D78E72608418F000D872B /* Build configuration list for PBXNativeTarget "Trap Square" */;
+			buildPhases = (
+				A17A084035947EF920B13680 /* [CP] Check Pods Manifest.lock */,
+				547D78C52608418C000D872B /* Resources */,
+				547D78E62608418F000D872B /* Embed App Extensions */,
+				81130062BDC400368E830CE5 /* Frameworks */,
+				B004AE7281DB5C613D3BE503 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				547D78D42608418E000D872B /* PBXTargetDependency */,
+			);
+			name = "Trap Square";
+			productName = "Trap Square";
+			productReference = 547D78C72608418C000D872B /* Trap Square.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		547D78D02608418E000D872B /* Trap Square MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 547D78E32608418F000D872B /* Build configuration list for PBXNativeTarget "Trap Square MessagesExtension" */;
+			buildPhases = (
+				212649533CA6D34914195F9A /* [CP] Check Pods Manifest.lock */,
+				547D78CD2608418E000D872B /* Sources */,
+				547D78CE2608418E000D872B /* Frameworks */,
+				547D78CF2608418E000D872B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Trap Square MessagesExtension";
+			productName = "Trap Square MessagesExtension";
+			productReference = 547D78D12608418E000D872B /* Trap Square MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		547D78C12608418C000D872B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					547D78C62608418C000D872B = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					547D78D02608418E000D872B = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 547D78C42608418C000D872B /* Build configuration list for PBXProject "Trap Square" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 547D78C02608418C000D872B;
+			productRefGroup = 547D78C82608418C000D872B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				547D78C62608418C000D872B /* Trap Square */,
+				547D78D02608418E000D872B /* Trap Square MessagesExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		547D78C52608418C000D872B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547D78CB2608418E000D872B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547D78CF2608418E000D872B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547D78DF2608418F000D872B /* Assets.xcassets in Resources */,
+				547D78DD2608418E000D872B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		212649533CA6D34914195F9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trap Square MessagesExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A17A084035947EF920B13680 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trap Square-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B004AE7281DB5C613D3BE503 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trap Square/Pods-Trap Square-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trap Square/Pods-Trap Square-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Trap Square/Pods-Trap Square-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		547D78CD2608418E000D872B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547D78DA2608418E000D872B /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		547D78D42608418E000D872B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 547D78D02608418E000D872B /* Trap Square MessagesExtension */;
+			targetProxy = 547D78D32608418E000D872B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		547D78DB2608418E000D872B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				547D78DC2608418E000D872B /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		547D78E12608418F000D872B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		547D78E22608418F000D872B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		547D78E42608418F000D872B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B353BFE09E78D2F2D235AC22 /* Pods-Trap Square MessagesExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Trap Square MessagesExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Trap-Square.MessagesExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		547D78E52608418F000D872B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E8872C6A37B57C5B02275FB /* Pods-Trap Square MessagesExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Trap Square MessagesExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Trap-Square.MessagesExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		547D78E82608418F000D872B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A0098A51856A504EAC1ED74 /* Pods-Trap Square.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Trap Square/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Trap-Square";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		547D78E92608418F000D872B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FCF4168AA9304A82D14554C /* Pods-Trap Square.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Trap Square/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Trap-Square";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		547D78C42608418C000D872B /* Build configuration list for PBXProject "Trap Square" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				547D78E12608418F000D872B /* Debug */,
+				547D78E22608418F000D872B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		547D78E32608418F000D872B /* Build configuration list for PBXNativeTarget "Trap Square MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				547D78E42608418F000D872B /* Debug */,
+				547D78E52608418F000D872B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		547D78E72608418F000D872B /* Build configuration list for PBXNativeTarget "Trap Square" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				547D78E82608418F000D872B /* Debug */,
+				547D78E92608418F000D872B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 547D78C12608418C000D872B /* Project object */;
+}

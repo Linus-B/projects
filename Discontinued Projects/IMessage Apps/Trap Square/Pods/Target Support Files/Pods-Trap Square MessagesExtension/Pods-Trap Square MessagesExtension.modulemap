@@ -1,0 +1,6 @@
+framework module Pods_Trap_Square_MessagesExtension {
+  umbrella header "Pods-Trap Square MessagesExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}

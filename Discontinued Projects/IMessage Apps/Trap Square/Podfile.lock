@@ -1,0 +1,63 @@
+PODS:
+  - Bond (7.6.6):
+    - Differ (~> 1.4)
+    - ReactiveKit (~> 3.14)
+  - Differ (1.4.5)
+  - DuckUI (0.5.2):
+    - Bond (~> 7.6.6)
+    - JGProgressHUD (~> 2.1)
+    - Kingfisher (~> 5.13.2)
+    - Layoutless
+    - ReactiveKit
+    - RSKPlaceholderTextView (~> 6.0.3)
+    - TinyConstraints (~> 4.0.1)
+  - Gifu (3.3)
+  - JGProgressHUD (2.2)
+  - KeychainSwift (19.0.0)
+  - Kingfisher (5.13.4):
+    - Kingfisher/Core (= 5.13.4)
+  - Kingfisher/Core (5.13.4)
+  - Layoutless (0.4.1)
+  - ReactiveKit (3.17.4)
+  - RSKPlaceholderTextView (6.0.3)
+  - SwiftyStoreKit (0.16.1)
+  - TinyConstraints (4.0.1)
+
+DEPENDENCIES:
+  - DuckUI
+  - Gifu
+  - KeychainSwift
+  - SwiftyStoreKit
+
+SPEC REPOS:
+  trunk:
+    - Bond
+    - Differ
+    - DuckUI
+    - Gifu
+    - JGProgressHUD
+    - KeychainSwift
+    - Kingfisher
+    - Layoutless
+    - ReactiveKit
+    - RSKPlaceholderTextView
+    - SwiftyStoreKit
+    - TinyConstraints
+
+SPEC CHECKSUMS:
+  Bond: 9e7d901cf4ed825b6004a93dd0a7f1c7479e2834
+  Differ: 3b6bd78e2b20cc795d9a86f7641d087524e4273e
+  DuckUI: 1401f1827307a566c158dac51b460609e31dad14
+  Gifu: 97c2a3c3865fbc834ab13f797e2e8e7729a1853c
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
+  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
+  Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
+  Layoutless: ba4810c682855373bddc78d9408cc82f970541d0
+  ReactiveKit: f9f9e079efa39312c597bf1508ef4810d111ce76
+  RSKPlaceholderTextView: fc8c8932546298ec9d5e5572284aa42adb87b066
+  SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
+  TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
+
+PODFILE CHECKSUM: 9eb4de69b82cba6268d18da1a293aff13bdbf74c
+
+COCOAPODS: 1.10.1
